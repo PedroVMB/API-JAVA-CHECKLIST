@@ -13,6 +13,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
 @RequestMapping("sindicos")
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class SindicoController {
     @Autowired
     private SindicoRepository repository;

@@ -18,6 +18,7 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("registros")
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class RegistroController {
     @Autowired
     private CondominioRepository condominioRepository;

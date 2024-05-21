@@ -17,6 +17,7 @@ import java.net.URI;
 
 @RestController
 @RequestMapping("torres")
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class TorreController {
     @Autowired
     private CondominioRepository condominioRepository;

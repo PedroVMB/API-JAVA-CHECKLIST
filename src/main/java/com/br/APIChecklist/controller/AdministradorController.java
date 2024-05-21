@@ -13,6 +13,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
 @RequestMapping("administradores")
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class AdministradorController {
     @Autowired
     private AdministradorRepository repository;

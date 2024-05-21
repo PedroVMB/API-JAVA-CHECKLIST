@@ -13,6 +13,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
 @RequestMapping("condominios")
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class CondominioController {
     @Autowired
     private CondominioRepository repository;
